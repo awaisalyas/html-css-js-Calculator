@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator_p">
+            <div class="calculator">
+                <form action="#" class="calc">
+                    <table class="calculator">
+                        <tr class="display">
+                            <input type="text" name="display" placeholder="Calculate here" id="display" value="">
+                        </tr>
+                        <tr>
+                            <td><input class="btn dark_btn" type="button" value="&#40" onclick="operator('(')"></td>
+                            <td><input class="btn dark_btn" type="button" value="&#41" onclick="operator(')')"></td>
+                            <td><input class="btn dark_btn" type="button" value="%" onclick="operator('%')"></td>
+                            <td><input class="btn dark_btn" type="button" value="AC" onclick="clearDisplay()"></td>
+                        </tr>
+                        <tr>
+                            <td> <input class="btn" type="button" value="7" onclick="number(7)"></td>
+                            <td> <input class="btn" type="button" value="8" onclick="number(8)"></td>
+                            <td> <input class="btn" type="button" value="9" onclick="number(9)"></td>
+                            <td> <input class="btn dark_btn" type="button" value="&#247" onclick="operator('/')"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="btn" type="button" value="4" onclick="number(4)"></td>
+                            <td><input class="btn" type="button" value="5" onclick="number(5)"></td>
+                            <td><input class="btn" type="button" value="6" onclick="number(6)"></td>
+                            <td><input class="btn dark_btn" type="button" value="&#215" onclick="operator('*')"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="btn" type="button" value="1" onclick="number(1)"></td>
+                            <td><input class="btn" type="button" value="2" onclick="number(2)"></td>
+                            <td><input class="btn" type="button" value="3" onclick="number(3)"></td>
+                            <td><input class="btn dark_btn" type="button" value="&#8722" onclick="operator('-')"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="btn" type="button" value="0" onclick="number(0)"></td>
+                            <td><input class="btn" type="button" value="." onclick="number('.')"></td>
+                            <td><input class="btn equal_btn" type="button" value="&#61" onclick="calculate()"></td>
+                            <td><input class="btn dark_btn" type="button" value="&#43" onclick="operator('+')"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
